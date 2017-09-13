@@ -126,7 +126,7 @@ spark_read_csv <- function(sc,
 #' @param charset The character set, defaults to \code{"UTF-8"}.
 #' @param null_value The character to use for default values, defaults to \code{NULL}.
 #' @param options A list of strings with additional options.
-#' @param mode Specifies the behavior when data or table already exists.
+#' @param mode Specifies the behavior when data or table already exists. See \url{http://spark.apache.org/docs/latest/sql-programming-guide.html#save-modes}.
 #' @param partition_by Partitions the output by the given columns on the file system.
 #' @param ... Optional arguments; currently unused.
 #'
@@ -225,7 +225,7 @@ spark_read_parquet <- function(sc,
 #' \href{https://parquet.apache.org/}{Parquet} format.
 #'
 #' @inheritParams spark_write_csv
-#' @param mode Specifies the behavior when data or table already exists.
+#' @param mode Specifies the behavior when data or table already exists. See \url{http://spark.apache.org/docs/latest/sql-programming-guide.html#save-modes}.
 #' @param options A list of strings with additional options. See \url{http://spark.apache.org/docs/latest/sql-programming-guide.html#configuration}.
 #' @param partition_by Partitions the output by the given columns on the file system.
 #' @param ... Optional arguments; currently unused.
@@ -303,7 +303,7 @@ spark_read_json <- function(sc,
 #' Object Notation} format.
 #'
 #' @inheritParams spark_write_csv
-#' @param mode Specifies the behavior when data or table already exists.
+#' @param mode Specifies the behavior when data or table already exists. See \url{http://spark.apache.org/docs/latest/sql-programming-guide.html#save-modes}.
 #' @param partition_by Partitions the output by the given columns on the file system.
 #' @param ... Optional arguments; currently unused.
 #'
